@@ -1,96 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Mudra</title>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-
-    <body>
-
-        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-            <div class="container">
-                <a class='navbar-brand logo' href='index_1.html'>
-                        <h1>HAQ-NAWAZ-MALI</h1>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                        <i class="mdi mdi-menu"></i>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link">Home</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haq Nawaz Malik - Portfolio</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Haq Nawaz Malik</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Home section -->
+    <section id="home" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="text-white">Hi, I'm Haq Nawaz Malik</h1>
+                    <p class="text-white">I'm a web developer and a data analyst. I love to create websites and analyze data using various tools and technologies.</p>
+                    <a href="#contact" class="btn btn-primary">Get in touch</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="profile.jpg" alt="Haq Nawaz Malik" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>I'm a web developer and a data analyst based in Jammu & Kashmir, India. I have a bachelor's degree in computer science and engineering from the University of Kashmir. I have over 3 years of experience in developing websites and analyzing data for various clients and projects.</p>
+                    <p>I'm proficient in HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, Python, R, and Tableau. I'm also familiar with WordPress, Laravel, Django, Flask, and Shiny. I enjoy learning new skills and technologies and applying them to solve real-world problems.</p>
+                    <p>When I'm not coding or crunching numbers, I like to read books, watch movies, play games, and travel.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h2>My Badges</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="badge1.png" alt="Badge 1" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="badge2.png" alt="Badge 2" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="badge3.png" alt="Badge 3" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="badge4.png" alt="Badge 4" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="badge5.png" alt="Badge 5" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="badge6.png" alt="Badge 6" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Web Development</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            HTML
+                            <span class="badge badge-primary badge-pill">90%</span>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            CSS
+                            <span class="badge badge-primary badge-pill">80%</span>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Services</a>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            JavaScript
+                            <span class="badge badge-primary badge-pill">70%</span>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Portfolio</a>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Bootstrap
+                            <span class="badge badge-primary badge-pill">85%</span>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="https://www.credly.com/users/haq-nawaz-malik.596b4740">Achievements</a>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            PHP
+                            <span class="badge badge-primary badge-pill">75%</span>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Blog</a>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            MySQL
+                            <span class="badge badge-primary badge-pill">80%</span>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Data Analysis</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Python
+                            <span class="badge badge-primary badge-pill">80%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            R
+                            <span class="badge badge-primary badge-pill">85%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Tableau
+                            <span class="badge badge-primary badge-pill">90%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Excel
+                            <span class="badge badge-primary badge-pill">80%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            SQL
+                            <span class="badge badge-primary badge-pill">75%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Power BI
+                            <span class="badge badge-primary badge-pill">70%</span>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-
-        <section class="home-bg section h-100vh" id="home">
-            <div class="bg-overlay"></div>
-                <div class="container z-index">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12">
-                            <div class="text-white text-center">
-                                <h4>Hello & Welcome</h4>
-                                <h1 class="header_title mb-0 mt-3">I Am <span class="element fw-bold" data-elements="A Designer.,A Developer."></span></h1>
-                                <ul class="social_home list-unstyled text-center pt-4">
-                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
-                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="https://linkedin.com/in/haq-nawaz-malik-70953a277"></i></a></li>
-                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-dribbble"></i></a></li>
-                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-google-plus"></i></a></li>
-                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
-                                </ul>
-                                <div class="header_btn">
-                                    <a href="javascript:void(0)" class="btn btn-outline-custom btn-rounded mt-4">Download CV</a>
-                                </div>
-                            </div>
+        </div>
+    </section>
+    <!-- Projects section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">A website for a travel agency using HTML, CSS, and Bootstrap.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">View Demo</a>
+                            <a href="#" class="btn btn-secondary">View Code</a>
                         </div>
                     </div>
                 </div>
-            <div class="scroll_down">
-                <a href="#about" class="scroll">
-                    <i class="mbri-arrow-down text-white"></i>
-                </a>
-            </div>
-        </section>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-         <script src="assets/js/jquery.min.js"></script>
-         <script src="assets/js/typed.js"></script>         
-        <script>
-            $(".element").each(function() {
-                var $this = $(this);
-                $this.typed({
-                    strings: $this.attr('data-elements').split(','),
-                    typeSpeed: 100,
-                    backDelay: 3000
-                });
-            });
-        </script>
-    </body>
-</html>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">A blog website using WordPress and a custom theme.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">View Demo</a>
+                            <a href="#" class="btn btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-
